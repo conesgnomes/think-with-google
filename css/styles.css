@@ -125,7 +125,7 @@ opacity: .3;
 
   .story {
     width: 44vw;
-    height: 350px;
+    height: 340px;
     float: left;
     overflow: hidden;
   }
@@ -174,10 +174,57 @@ opacity: .3;
 
 }
 
-@media screen and (min-width: 1000) {
+@media screen and (min-width: 1000px) {
 
   h2 {
     display: block;
-    border: solid red 3px;
+    font-size: 1.9em;
+    font-weight: 300;
+    margin-bottom: 40px;
+  }
+
+  .hero {
+    float: left;
+    width: 45vw;
+    height: 360px;
+  }
+
+  .hero .hero-text {
+    top: 55%;
+  }
+
+  .hero p:first-child {
+    margin-bottom: 60px;
+  }
+
+  .hero1 {
+    margin-right: 2vw;
+  }
+
+  .story {
+    width: 21.5vw;
+    height: 360px;
+    margin: 0;
+  }
+
+  .story:first-of-type, .story:nth-child(n+3) {
+    margin-right: 2vw;
+  }
+
+  .story:nth-child(n+3) {
+    margin-top: 3vh;
+  }
+
+  .stories:after {
+    clear: none;
+  }
+
+  .img-container {
+    height: 40%;
+  }
+
+  .img-container img {
+    width: auto;
+    height: 100%;
   }
 }
