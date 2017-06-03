@@ -10,6 +10,49 @@ body {
   background-color: #f5f5f5;
 }
 
+.header {
+  height: 225px;
+  position: relative;
+}
+
+.hamburger-menu {
+  display: block;
+  width: 25px;
+  height: 25px;
+  float: left;
+}
+
+.hamburger-menu hr {
+  border-top: solid 2px #424242;
+  margin-top: 4px;
+}
+
+.header h2 {
+  font-weight: 300;
+  display: block;
+  float: left;
+  margin-left: 20px;
+  font-size: 1.4em;
+  color: #696b6c;
+}
+
+.tagline {
+  position: absolute;
+  font-weight: 300;
+  color: #696b6c;
+  font-size: 1.7em;
+  top: 100px;
+  left: 10px;
+}
+
+.language {
+  display: none;
+}
+
+.search {
+  float: right;
+}
+
 h2 {
   display: none;
 }
@@ -41,7 +84,7 @@ opacity: .3;
   position: absolute;
   top: 70%;
   left: 5%;
-  width: 70%;
+  width: 75%;
 }
 
 .hero p:first-child {
@@ -176,7 +219,52 @@ opacity: .3;
 
 @media screen and (min-width: 1000px) {
 
-  h2 {
+  body {
+    padding: 0;
+  }
+
+  .body {
+    padding: 4vh 4vw;
+  }
+
+  .header {
+    background-image: url("../img/head-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 490px;
+    padding: 4vh 4vw;
+  }
+
+  .language, .language p, .language i {
+    float: left;
+  }
+
+  .language {
+    margin-left: 20px;
+    padding-top: 10px;
+    color: #696b6c;
+  }
+
+  .language i {
+    font-size: 1em;
+    margin-left: 20px;
+  }
+
+  .search {
+    float: right;
+  }
+
+  .tagline {
+    position: absolute;
+    font-weight: 300;
+    color: #696b6c;
+    font-size: 2.6em;
+    top: 200px;
+    left: 65px;
+  }
+
+  .body h2 {
     display: block;
     font-size: 1.9em;
     font-weight: 300;
@@ -191,6 +279,7 @@ opacity: .3;
 
   .hero .hero-text {
     top: 55%;
+    width: 70%;
   }
 
   .hero p:first-child {
